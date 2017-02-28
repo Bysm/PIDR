@@ -1,0 +1,36 @@
+Graph
+Example1
+""
+Nodes
+ID;Name;X;Y
+9;Node n°9;332;239
+3;Node n°3;285;151
+10;Node n°10;444;237
+5;Solo;350;300
+59;Node n°59;388;82
+2;Node n°2;486;136
+""
+Arcs
+ID;headId;tailId;directed;color
+17;5;5;true;8
+3;2;10;false;2
+9;3;2;false;2
+15;5;5;true;6
+2;59;2;false;2
+8;3;10;false;2
+18;5;5;true;9
+16;5;5;true;7
+6;9;59;false;2
+12;5;5;true;3
+14;5;5;true;5
+7;59;10;false;2
+4;10;9;false;2
+13;5;5;true;4
+10;5;5;true;1
+1;3;59;false;2
+11;5;5;true;2
+0;9;3;false;2
+5;9;2;false;2
+""
+Colors
+ID;red;green;blue

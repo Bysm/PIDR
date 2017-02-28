@@ -1,0 +1,33 @@
+Welcome to DynGraph, the dynamic graph editor for matlab, by Jean-Baptiste Dominguez and Raphaël Moulet!
+
+This file contains the instruction for installing and launching your first dynGraph. Please see the user manual for editing once the editor is launched.
+
+The folder for the installation must contain:
+-the dynGraph.m class
+-the dynGraph.jar file
+
+Put this folder where you want (we advise matlab's toolbox folder).
+Then open matlab, and go to the folder.
+Then right-click and select "add to path".
+Make sure you launch the dynGraph class before closing matlab or use the "savepath" command.
+
+You should now be able to call the class dynGraph from any folder.
+
+Let's call your first dynGraph G.
+
+WARNING: the name "Test" is reserved for a default demonstration graph. Launching such a graph will overwrite it in your workspace.
+Also, this program overwrites any variable called "tmp"
+
+You can create a dynGraph by writing the command G = dynGraph;
+To launch the program, write G = G.draw('G'), or G.draw('Test'). Note that it's the name of the graph between the inverted commas that defines which graph is used, not the graph calling the function.
+
+If the program lauched correctly, the variable DynGraphGraphicLoaded = 1 will be created.
+You can now edit your Graph. Once done, try to use the export option in the menu. It will create a csv file with your graph in the current folder. You can later open another graph and then go back to editing this one by using import graph while being in the folder with the .csv
+Remember to export the new graph or, while matlab will keep the list of nodes and arcs, it won't save their graphical properties.
+
+For more information on using DynGraph, please consult the User Manual.
+
+IF A PATHING ERROR OCCURS - dynGraph.JAR not being found
+Try going back into the folder with dynGraph.m, and launch the application from there. If it still can't find pidr.jar, try 
+javaaddpath('./dynGraph.jar');
+
