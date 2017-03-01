@@ -32,6 +32,7 @@ public class ManagerMatlab extends AManager implements IManagerConnector {
 			//makes sure the link between matlab and program works
 			proxy.setVariable("DynGraphGraphicLoaded", 1);
 			processor = new MatlabTypeConverter(proxy);
+			//PIDR_MODIF : changer la valeur d'instance
 		} catch (MatlabConnectionException e1) {
 			e1.printStackTrace();
 		} catch (MatlabInvocationException e) {
